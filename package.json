@@ -1,0 +1,30 @@
+{
+  "name": "vui-alerts",
+  "version": "0.0.1",
+  "description": "LESS mixins and CSS for styling alerts",
+  "scripts": {
+    "test": "gulp && gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Brightspace/valence-ui-alerts.git"
+  },
+  "keywords": [
+    "d2l",
+    "valence-ui",
+    "vui"
+  ],
+  "author": "D2L Corporation",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Brightspace/valence-ui-alerts/issues"
+  },
+  "homepage": "https://github.com/Brightspace/valence-ui-alerts",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "del": "^0.1.3",
+    "gulp": "^3.8.8",
+    "vui-helpers": "^0.5.2"
+  }
+}
