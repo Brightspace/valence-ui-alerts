@@ -1,4 +1,4 @@
-# valence-ui-alerts
+#valence-ui-alerts
 
 [![NPM version][npm-image]][npm-url]
 [![Build status][ci-image]][ci-url]
