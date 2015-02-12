@@ -12,3 +12,6 @@ This library contains uncompiled LESS and compiled CSS which can be used to appl
 [ci-image]: https://img.shields.io/travis-ci/Brightspace/valence-ui-alerts.svg
 [dependencies-url]: https://david-dm.org/brightspace/valence-ui-alerts
 [dependencies-image]: https://img.shields.io/david/Brightspace/valence-ui-alerts.svg
+
+#### Coding styles
+See the [VUI Best Practices & Style Guide](https://github.com/Brightspace/valence-ui-docs/wiki/Best-Practices-&-Style-Guide) for information on VUI naming conventions, plus information about the [EditorConfig](http://editorconfig.org) rules used in this repo.
