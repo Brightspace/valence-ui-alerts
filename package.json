@@ -1,6 +1,6 @@
 {
   "name": "vui-alerts",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "LESS mixins and CSS for styling alerts",
   "scripts": {
     "test": "gulp && gulp test"
