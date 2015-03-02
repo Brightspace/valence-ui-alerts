@@ -9,7 +9,7 @@ This library contains uncompiled LESS and compiled CSS which can be used to appl
 [npm-url]: https://www.npmjs.org/package/vui-alerts
 [npm-image]: https://img.shields.io/npm/v/vui-alerts.svg
 [ci-url]: https://travis-ci.org/Brightspace/valence-ui-alerts
-[ci-image]: https://img.shields.io/travis-ci/Brightspace/valence-ui-alerts.svg
+[ci-image]: https://travis-ci.org/Brightspace/valence-ui-alerts.svg?branch=master
 [dependencies-url]: https://david-dm.org/brightspace/valence-ui-alerts
 [dependencies-image]: https://img.shields.io/david/Brightspace/valence-ui-alerts.svg
 
