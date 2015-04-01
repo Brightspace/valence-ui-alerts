@@ -6,6 +6,8 @@
 
 This library contains uncompiled LESS and compiled CSS which can be used to apply alert styles to a containing element.  In most cases you'll want to apply this style to a simple container for a message, however there is nothing limiting the contents to just text.
 
+For further information on this component and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
+
 [npm-url]: https://www.npmjs.org/package/vui-alerts
 [npm-image]: https://img.shields.io/npm/v/vui-alerts.svg
 [ci-url]: https://travis-ci.org/Brightspace/valence-ui-alerts
