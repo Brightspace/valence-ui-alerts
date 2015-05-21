@@ -3,7 +3,7 @@
   "version": "0.0.9",
   "description": "Mixins and CSS for styling alerts",
   "scripts": {
-    "clean": "del error.css error-less.css",
+    "clean": "rimraf error.css && rimraf error-less.css",
     "lint:css": "csslint error.css",
     "prebuild": "npm run clean",
     "build:less": "lessc error.css.less > error-less.css",
@@ -31,13 +31,13 @@
   "dependencies": {},
   "devDependencies": {
     "csslint": "^0.10.0",
-    "del": "^1.2.0",
     "jasmine-dom-matchers": "^0.1.0",
     "karma": "^0.12.32",
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-jasmine": "^0.3.5",
     "karma-cli": "0.0.4",
     "less": "^2.5.1",
-    "node-sass": "^3.1.1"
+    "node-sass": "^3.1.1",
+    "rimraf": "^2.3.4"
   }
 }
