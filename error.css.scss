@@ -1,0 +1,5 @@
+@import 'error';
+
+.vui-error {
+	@include vui-alerts-error;
+}

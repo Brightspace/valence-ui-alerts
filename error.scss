@@ -1,0 +1,40 @@
+
+$vui-alerts-error-backgroundColor: #ffeeec !default;
+$vui-alerts-error-borderColor: #ff7962 !default;
+$vui-alerts-error-borderStyle: solid !default;
+$vui-alerts-error-borderWidth: 5px !default;
+$vui-alerts-error-borderRadius: 3px !default;
+$vui-alerts-error-padding: 6px !default;
+
+@mixin vui-alerts-error(
+		$backgroundColor: $vui-alerts-error-backgroundColor,
+		$borderColor: $vui-alerts-error-borderColor,
+		$borderStyle: $vui-alerts-error-borderStyle,
+		$borderWidth: $vui-alerts-error-borderWidth,
+		$borderRadius: $vui-alerts-error-borderRadius,
+		$padding: $vui-alerts-error-padding
+	) {
+
+	background-color: $backgroundColor;
+	border-width: 0;
+	border-left:
+		$borderWidth
+		$borderStyle
+		$borderColor;
+	border-bottom-right-radius: $borderRadius;
+	border-top-right-radius: $borderRadius;
+	padding: $padding;
+
+	[dir='rtl'] & {
+		border-left-width: 0;
+		border-right:
+			$borderWidth
+			$borderStyle
+			$borderColor;
+		border-bottom-right-radius: 0;
+		border-top-right-radius: 0;
+		border-bottom-left-radius: $borderRadius;
+		border-top-left-radius: $borderRadius;
+	}
+
+}
