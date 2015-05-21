@@ -10,6 +10,7 @@
     "build:sass": "node-sass --output-style expanded error.css.scss error.css",
     "build": "npm run build:sass && npm run build:less",
     "postbuild": "npm run lint:css",
+    "pretest": "npm run build",
     "test": "karma start karma.conf.js"
   },
   "repository": {
