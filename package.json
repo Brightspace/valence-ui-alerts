@@ -1,9 +1,16 @@
 {
   "name": "vui-alerts",
-  "version": "0.0.8",
-  "description": "LESS mixins and CSS for styling alerts",
+  "version": "0.0.9",
+  "description": "Mixins and CSS for styling alerts",
   "scripts": {
-    "test": "gulp && gulp test"
+    "clean": "del error.css error-less.css",
+    "lint:css": "csslint error.css",
+    "prebuild": "npm run clean",
+    "build:less": "lessc error.css.less > error-less.css",
+    "build:sass": "node-sass --output-style expanded error.css.scss error.css",
+    "build": "npm run build:sass && npm run build:less",
+    "postbuild": "npm run lint:css",
+    "test": "karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
@@ -20,11 +27,16 @@
     "url": "https://github.com/Brightspace/valence-ui-alerts/issues"
   },
   "homepage": "https://github.com/Brightspace/valence-ui-alerts",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "del": "^0.1.3",
-    "gulp": "^3.8.8",
-    "vui-helpers": "^0.5.2"
+    "csslint": "^0.10.0",
+    "del": "^1.2.0",
+    "jasmine-dom-matchers": "^0.1.0",
+    "karma": "^0.12.32",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-jasmine": "^0.3.5",
+    "karma-cli": "0.0.4",
+    "less": "^2.5.1",
+    "node-sass": "^3.1.1"
   }
 }
