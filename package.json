@@ -3,13 +3,13 @@
   "version": "0.0.11",
   "description": "Mixins and CSS for styling alerts",
   "scripts": {
-    "clean": "rimraf error.css && rimraf error-less.css",
-    "lint:css": "csslint error.css error-less.css",
+    "clean": "rimraf *.css",
     "prebuild": "npm run clean",
-    "build:less:css": "lessc error.css.less > error-less.css",
-    "build:sass:css": "node-sass --output-style expanded error.css.scss error.css",
     "build": "npm run build:sass:css && npm run build:less:css",
-    "postbuild": "npm run lint:css",
+    "build:less:css": "lessc error.css.less > error-less.css",
+    "postbuild:less:css": "csslint error-less.css",
+    "build:sass:css": "node-sass --output-style expanded error.css.scss error.css",
+    "postbuild:sass:css": "csslint error.css",
     "pretest": "npm run build",
     "test": "karma start karma.conf.js"
   },
