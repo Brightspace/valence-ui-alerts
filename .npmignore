@@ -6,6 +6,4 @@
 node_modules
 karma.conf.js
 test
-error.css.less
 error.css.scss
-error-less.css
