@@ -4,9 +4,7 @@
 [![Build status][ci-image]][ci-url]
 [![Dependency Status][dependencies-image]][dependencies-url]
 
-This component contains Sass mixins and CSS that can be used to apply alert styles to a containing element. LESS mixins are still include for backward compatibility, however these will likely be removed in a future version.
-
-In most cases you'll want to apply this style to a simple container for a message, however there is nothing limiting the contents to just text.
+This component contains Sass mixins and CSS that can be used to apply alert styles to a containing element. In most cases you'll want to apply this style to a simple container for a message, however there is nothing limiting the contents to just text.
 
 For further information on this component and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
