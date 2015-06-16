@@ -6,9 +6,8 @@
     "clean": "rimraf *.css",
     "prebuild": "npm run clean",
     "build": "node-sass --output-style expanded error.css.scss error.css",
-    "postbuild": "csslint error.css",
     "pretest": "npm run build",
-    "test": "karma start karma.conf.js"
+    "test": "csslint error.css && karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
