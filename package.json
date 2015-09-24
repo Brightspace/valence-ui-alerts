@@ -1,6 +1,6 @@
 {
   "name": "vui-alerts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Mixins and CSS for styling alerts",
   "scripts": {
     "clean": "rimraf *.css",
