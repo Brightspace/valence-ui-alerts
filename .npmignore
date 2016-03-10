@@ -4,6 +4,4 @@
 .npmignore
 .travis.yml
 node_modules
-karma.conf.js
 test
-error.css.scss
