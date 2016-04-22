@@ -2,9 +2,7 @@
 
 # vui-alerts
 [![Bower version][bower-image]][bower-url]
-[![NPM version][npm-image]][npm-url]
 [![Build status][ci-image]][ci-url]
-[![Dependency Status][dependencies-image]][dependencies-url]
 
 A Valence UI, [Polymer](https://www.polymer-project.org/1.0/)-based web component alert element.
 
