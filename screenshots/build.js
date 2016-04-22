@@ -12,6 +12,6 @@ page.open('./test/perceptual/alert.html', function() {
 		width:  clipRect.width,
 		height: clipRect.height
 	};
-	page.render('screenshot.png');
+	page.render('./screenshots/screenshot.png');
 	phantom.exit();
 });
