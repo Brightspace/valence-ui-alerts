@@ -4,15 +4,15 @@
 <dom-module id="vui-alert">
     <template>
         <style>
-            :root {
-                --very-red: #ff7962;
+			:host {
+				--very-red: #ff7962;
                 --less-red: #ffeeec;
                 --border-width: 0.25rem;
                 --border-radius: 0.15rem;
                 --padding: 0.3rem;
-            }
-
-            .container {
+			}
+								
+            .vui-alerts-alert {			
                 background-color: var(--less-red);
                 border-width: 0;
                 border-left: var(--border-width) solid var(--very-red);
@@ -21,7 +21,7 @@
                 padding: var(--padding);
             }
 
-            .container [dir='rtl'] {
+            :host-context([dir='rtl']) .vui-alerts-alert {
 		        border-left-width: 0;
 		        border-right: var(--border-width) solid var(--very-red);
 		        border-bottom-right-radius: 0;
@@ -30,10 +30,9 @@
 		        border-top-left-radius: var(--border-radius);
 	        }
         </style>
-
-        <div class="container">
-            <content></content>
-        </div>
+		<div class="vui-alerts-alert">
+			<content></content>
+		</div>
     </template>
 
     <script>
