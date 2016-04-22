@@ -1,16 +1,17 @@
 {
   "name": "vui-alerts",
   "version": "0.1.4",
-  "description": "Mixins and CSS for styling alerts",
+  "description": "Web component alert elements",
+  "private": true,
   "scripts": {
-    "clean": "rimraf *.css && rimraf ./test/*.css",
-    "prebuild": "npm run clean",
-    "build:sass:test": "node-sass --output-style expanded ./test/test.scss ./test/test.css",
-    "build:sass": "node-sass --output-style expanded error.css.scss error.css",
-    "build": "npm run build:sass && npm run build:sass:test",
-    "perceptual-diff": "percy snapshot test/",
-    "pretest": "npm run build",
-    "test": "csslint error.css"
+    "prebuild": "cpy *.html ./bower_components/temp",
+    "build": "vulcanize ./bower_components/temp/alert.html > ./test/perceptual/alert.html.ignore",
+    "postbuild": "rimraf ./bower_components/temp",
+    "preperceptual-diff": "npm run build",
+    "perceptual-diff": "percy snapshot test/perceptual --enable_javascript",
+    "postinstall": "bower install",
+    "screenshot": "phantomjs ./screenshots/build.js",
+    "test": "polylint && wct --skip-plugin sauce"
   },
   "repository": {
     "type": "git",
@@ -29,8 +30,12 @@
   "homepage": "https://github.com/Brightspace/valence-ui-alerts",
   "dependencies": {},
   "devDependencies": {
-    "csslint": "^0.10.0",
-    "node-sass": "^3.4.2",
-    "rimraf": "^2.3.4"
+    "bower": "^1.7.7",
+    "cpy-cli": "^1.0.0",
+    "phantomjs-prebuilt": "^2.1.4",
+    "polylint": "^2.10.0",
+    "rimraf": "^2.3.4",
+    "vulcanize": "^1.14.7",
+    "web-component-tester": "^4.2.2"
   }
 }

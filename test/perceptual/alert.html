@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Alert Snapshot</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+		<script src="https://s.brightspace.com/lib/webcomponentsjs/0.7.21/webcomponents-lite.min.js"></script>
+		<link rel="import" href="alert.html.ignore"> 
+		<style>
+			@import 'https://fonts.googleapis.com/css?family=Lato:700,400,300';
+			html {
+				font-size: 20px;
+			}
+			body {
+				font-family: 'Lato', sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="screenshot" style="display:none;">
+			<vui-alert>Oops! This is embarassing...</vui-alert>
+		</p>
+		<p id="loading">Loading</p>
+		<p id="wcnotready">WC Not Ready</p>
+		<p id="loaded" style="display:none;">Loaded</p>
+		<p id="wcready" style="display:none;">WC Ready</p>
+		<script>
+		window.addEventListener('load', function() {
+			document.getElementById('loading').style.display = 'none';
+			document.getElementById('loaded').style.display = 'block';
+		});
+		window.addEventListener('WebComponentsReady', function() {
+			document.getElementById('wcnotready').style.display = 'none';
+			document.getElementById('wcready').style.display = 'block';
+		});
+		</script>
+	</body>
+</html>
