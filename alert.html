@@ -2,40 +2,40 @@
 <link rel="import" href="../vui-colors/colors.html">
 
 <dom-module id="vui-alert">
-    <template>
-        <style>
+	<template>
+		<style>
 			:host {
 				--very-red: #ff7962;
-                --less-red: #ffeeec;
-                --border-width: 0.25rem;
-                --border-radius: 0.15rem;
-                --padding: 0.3rem;
+				--less-red: #ffeeec;
+				--border-width: 0.25rem;
+				--border-radius: 0.15rem;
+				--padding: 0.3rem;
 
-                background-color: var(--less-red);
-                border-width: 0;
-                border-left: var(--border-width) solid var(--very-red);
-                border-bottom-right-radius: var(--border-radius);
-                border-top-right-radius: var(--border-radius);
-                padding: var(--padding);
+				background-color: var(--less-red);
+				border-width: 0;
+				border-left: var(--border-width) solid var(--very-red);
+				border-bottom-right-radius: var(--border-radius);
+				border-top-right-radius: var(--border-radius);
+				padding: var(--padding);
 
-                display: block;
-            }
+				display: block;
+			}
 
-            :host-context([dir='rtl']) {
-		        border-left-width: 0;
-		        border-right: var(--border-width) solid var(--very-red);
-		        border-bottom-right-radius: 0;
-		        border-top-right-radius: 0;
-		        border-bottom-left-radius: var(--border-radius);
-		        border-top-left-radius: var(--border-radius);
-	        }
-        </style>
+			:host-context([dir='rtl']) {
+				border-left-width: 0;
+				border-right: var(--border-width) solid var(--very-red);
+				border-bottom-right-radius: 0;
+				border-top-right-radius: 0;
+				border-bottom-left-radius: var(--border-radius);
+				border-top-left-radius: var(--border-radius);
+			}
+		</style>
 		<content></content>
-    </template>
+	</template>
 
-    <script>
-        Polymer({
+	<script>
+		Polymer({
 			is: 'vui-alert'
-        });
-    </script>
+		});
+	</script>
 </dom-module>
