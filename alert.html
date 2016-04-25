@@ -10,18 +10,18 @@
                 --border-width: 0.25rem;
                 --border-radius: 0.15rem;
                 --padding: 0.3rem;
-			}
-								
-            .vui-alerts-alert {			
+
                 background-color: var(--less-red);
                 border-width: 0;
                 border-left: var(--border-width) solid var(--very-red);
                 border-bottom-right-radius: var(--border-radius);
                 border-top-right-radius: var(--border-radius);
                 padding: var(--padding);
+
+                display: block;
             }
 
-            :host-context([dir='rtl']) .vui-alerts-alert {
+            :host-context([dir='rtl']) {
 		        border-left-width: 0;
 		        border-right: var(--border-width) solid var(--very-red);
 		        border-bottom-right-radius: 0;
@@ -30,9 +30,7 @@
 		        border-top-left-radius: var(--border-radius);
 	        }
         </style>
-		<div class="vui-alerts-alert">
-			<content></content>
-		</div>
+		<content></content>
     </template>
 
     <script>
